@@ -41,7 +41,7 @@ ocean_proximity = st.selectbox(
 if st.button("Predict House Price"):
 
     response = requests.post(
-        "http://127.0.0.1:8000/predict",
+        "https://house-prediction-model-streamlit-1.onrender.com/predict",
         json={
             "housing_median_age": housing_median_age,
             "total_rooms": total_rooms,
